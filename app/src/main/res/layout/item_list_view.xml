@@ -1,0 +1,93 @@
+<!--?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</LinearLayout-->
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:id="@+id/producto_id">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/imageProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tvDescripcion"
+            android:layout_toStartOf="@+id/tvDescripcion"
+            card_view:srcCompat="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPrecioSuperSelectos"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tvPrecioSuperSelectos"
+            android:padding="3dp"
+            android:text="Descripcion"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorLetras" />
+
+        <TextView
+            android:id="@+id/tvPrecioSuperSelectos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPrecioWalmart"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/tvPrecioWalmart"
+            android:layout_below="@+id/tvDescripcion"
+            android:padding="3dp"
+            android:text="Super Selectos $"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/colorSselectos"/>
+
+        <TextView
+            android:id="@+id/tvPrecioWalmart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvPrecioSuperSelectos"
+            android:layout_marginLeft="106dp"
+            android:layout_marginStart="106dp"
+            android:padding="3dp"
+            android:text="Walmart $"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/colorWalmart"/>
+
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="13dp"
+            android:src="@drawable/ic_add_circle" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

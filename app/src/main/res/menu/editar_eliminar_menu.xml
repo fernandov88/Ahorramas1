@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/accion_editar"
+        android:title="@string/accion_editar"
+        myapp:showAsAction="always" />
+
+    <item
+        android:id="@+id/accion_eliminar"
+        android:title="@string/accion_eliminar"
+        myapp:showAsAction="always" />
+
+</menu>

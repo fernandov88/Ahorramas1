@@ -1,0 +1,67 @@
+<!--?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</LinearLayout-->
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:id="@+id/lista_id">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <!--TextView
+            android:id="@+id/tvNlista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Lista:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorLetras" /-->
+
+        <TextView
+            android:id="@+id/tvNombreLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Nombre Lista"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Fecha de Lista"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvNombreLista"
+            android:textColor="@color/colorLetras"/>
+
+        <ImageView
+            android:id="@+id/image_menu"
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_menu_three_dots" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
